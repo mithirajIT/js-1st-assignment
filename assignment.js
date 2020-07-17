@@ -5,10 +5,9 @@ function feetToMile (feet) {
         return mile;
     }
     else {
-        return "Please Enter the positive Value."
+        return "Please avoid negative value."
     }
 }
-
 
 // The function of calculating wood.
 function woodCalculator (chair, table, bed) {
@@ -22,18 +21,17 @@ function woodCalculator (chair, table, bed) {
                 return total;
             }
             else {
-                return "Please Enter the positive Value."
+                return "Please avoid negative Value."
             }
         }
         else {
-            return "Please Enter the positive Value."
+            return "Please avoid negative value."
         }
     }
     else {
-        return "Please Enter the positive Value."
+        return "Please avoid negative value."
     }
 }
-
 
 // Function for calculating bricks.
 function brickCalculator (building) {
@@ -58,18 +56,18 @@ function brickCalculator (building) {
         return totalBricks;
     }
     else {
-        return "Please enter the positive value."
+        return "Please avoid negative value."
     }
 }
 
 
 // Function to find the smallest name.
-function tinyFriend (nameArray) {
-    var smallName = nameArray[0];
-    for (var i = 0; i < nameArray.length; i++) {
-        var element = nameArray[i];
-        if (element.length < smallName.length) {
-            smallName = element;
+function tinyFriend (names) {
+    var smallName = names[0];
+    for (var i = 0; i < names.length; i++) {
+        var currentName = names[i];
+        if (currentName.length < smallName.length) {
+            smallName = currentName;
         }
     }
     return smallName;  
